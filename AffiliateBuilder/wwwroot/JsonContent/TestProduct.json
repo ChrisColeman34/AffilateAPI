@@ -1,0 +1,56 @@
+﻿{
+  "Id": 1,
+  "Name": "Test",
+  "ShortDescription": "Test",
+  "ContentHTML": "dolor ut elit occaecat",
+  "ProductMetaData": {
+    "Id": 6,
+    "MetaDataHTML": "Test",
+    "ImageURL": "magna"
+  },
+  "ReviewMetaData": [
+    {
+      "Id": 2,
+      "ReviewFactors": [
+        {
+          "Key": "Quality",
+          "Value": 5
+
+        },
+        {
+          "Key": "Performance",
+          "Value": 2
+        },
+        {
+          "Key": "Specs",
+          "Value":  4
+        }
+      ],
+      "ReviewHTML": "s",
+      "ReviewURL": "Test"
+    }
+  ],
+  "Affiliates": [
+    {
+      "Id": 3,
+      "Name": "Test 3",
+      "ProductURL": "exercitation elit",
+      "AffiliateURL": "Test",
+      "AffiliatePrice": 400
+    },
+    {
+      "Id": 4,
+      "Name": "Test 4",
+      "ProductURL": "non dolor d",
+      "AffiliateURL": "Test",
+      "AffiliatePrice": 300
+    },
+    {
+      "Id": 5,
+      "Name": "Test 5",
+      "ProductURL": "Test",
+      "AffiliateURL": "labore in",
+      "AffiliatePrice": 490
+    }
+  ]
+}

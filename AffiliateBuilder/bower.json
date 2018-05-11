@@ -1,0 +1,11 @@
+{
+  "name": "myproject",
+  "dependencies": {
+    "bootstrap": "v4.1.1",
+    "jquery-validation": "1.17.0",
+    "jquery-validation-unobtrusive": "v3.2.9"
+  },
+  "resolutions": {
+    "jquery-validation-unobtrusive": "v3.2.9"
+  }
+}

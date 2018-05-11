@@ -1,0 +1,164 @@
+﻿{
+  "definitions": {
+    "IAffiliate": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "Id": {
+          "type": "integer"
+        },
+        "Name": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ProductURL": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "AffiliateURL": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "AffiliatePrice": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "Id",
+        "Name",
+        "ProductURL",
+        "AffiliateURL",
+        "AffiliatePrice"
+      ]
+    },
+    "IProductMetaData": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "Id": {
+          "type": "integer"
+        },
+        "MetaDataHTML": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ImageURL": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "Id",
+        "MetaDataHTML",
+        "ImageURL"
+      ]
+    },
+    "IReviewMetaData": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "Id": {
+          "type": "integer"
+        },
+        "ReviewFactors": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "additionalProperties": {
+            "type": "integer"
+          }
+        },
+        "ReviewHTML": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ReviewURL": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "Id",
+        "ReviewFactors",
+        "ReviewHTML",
+        "ReviewURL"
+      ]
+    }
+  },
+  "title": "JSON Schema for Products",
+  "type": "object",
+  "properties": {
+    "Id": {
+      "type": "integer"
+    },
+    "Name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "ShortDescription": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "ContentHTML": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "ProductMetaData": {
+      "$ref": "#/definitions/IProductMetaData"
+    },
+    "ReviewMetaData": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "$ref": "#/definitions/IReviewMetaData"
+      }
+    },
+    "Affiliates": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "$ref": "#/definitions/IAffiliate"
+      }
+    }
+  },
+  "required": [
+    "Id",
+    "Name",
+    "ShortDescription",
+    "ContentHTML",
+    "ProductMetaData",
+    "ReviewMetaData",
+    "Affiliates"
+  ]
+}
